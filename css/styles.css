@@ -1,0 +1,221 @@
+* {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos del header */
+
+header {
+  background-color: #232323;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 2em;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+}
+
+header div p {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+/* Estilos del nav */
+
+.imagenNav {
+  background-image: url(../imagenes/B.jpg);
+  width: 100%;
+  height: 93vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div nav ul {
+  padding-top: 1em;
+  margin-right: 7em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: #909090;
+}
+
+div nav ul li {
+  margin-left: 2em;
+  font-size: large;
+  font-weight: bolder;
+  
+}
+
+.inputBuscar {
+  position: relative;
+}
+
+div nav ul li input {
+  height: 2.5em;
+  width: 130%;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  font-size: large;
+  color: #909090;
+}
+
+div nav ul li span {
+  position: absolute;
+  bottom: 0.5em;
+  right: -2em;
+}
+
+/* Estilos del main */
+
+main {
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 2px solid #ebebeb;
+}
+
+main nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+main nav ul li {
+  padding-left: 2em;
+  font-weight: 500;
+  font-size: large;
+  color: #5c5c5c;
+}
+
+.imagenesMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #909090;
+}
+
+.preciosEnImagenes{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.imagenMain1 {
+  background-image: url(../imagenes/item-1.png);
+  height: 49vh;
+  width: 40vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+}
+
+.imagenMain2 {
+  background-image: url(../imagenes/item-2.png);
+  height: 68vh;
+  width: 46vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+}
+
+.imagenMain3 {
+  background-image: url(../imagenes/item-4.png);
+  height: 89vh;
+  width: 90vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+}
+
+.imagenMain4 {
+  background-image: url(../imagenes/item-3.png);
+  height: 76vh;
+  width: 89vh;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+  margin-top: -8%;
+}
+
+.imagenMain5 {
+  background-image: url(../imagenes/item-5.png);
+  height: 59vh;
+  width: 45vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+.imagenMain6 {
+  background-image: url(../imagenes/item-6.png);
+  height: 59vh;
+  width: 44vh;
+  background-size: 102.5%;
+  background-repeat: no-repeat;
+  padding-bottom: 1em;
+  border: 1px solid #bdbdbd;
+  margin-top: 20px;
+}
+
+/* Estilos de la parte de informacion */
+
+.infoTienda {
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.informaciones {
+  display: flex;
+  flex-direction: column;
+}
+
+.informaciones a {
+  text-decoration: none;
+  color: #000000;
+  margin-top: 1em;
+}
+
+/* Estilos del footer */
+
+footer {
+  width: 88%;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: 100%;
+  background-color: #00d2d6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logosRedesSociales {
+  width: 1.5em;
+}
