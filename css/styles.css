@@ -3,6 +3,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilos del Index */
+
 /* Estilos del header */
 
 header {
@@ -13,6 +15,11 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 2em;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 header div {
@@ -50,7 +57,11 @@ div nav ul li {
   margin-left: 2em;
   font-size: large;
   font-weight: bolder;
-  
+}
+
+div nav ul li a {
+  text-decoration: none;
+  color: #909090;
 }
 
 .inputBuscar {
@@ -72,6 +83,14 @@ div nav ul li span {
   right: -2em;
 }
 
+#contenedorSeccionHombre {
+  display: none;
+}
+
+#contenedorSeccionMujer {
+  display: none;
+}
+
 /* Estilos del main */
 
 main {
@@ -82,7 +101,7 @@ main {
   border-top: 2px solid #ebebeb;
 }
 
-main nav ul{
+main nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -106,7 +125,7 @@ main nav ul li {
   color: #909090;
 }
 
-.preciosEnImagenes{
+.preciosEnImagenes {
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -164,7 +183,6 @@ main nav ul li {
   margin-left: 10px;
 }
 
-
 .imagenMain6 {
   background-image: url(../imagenes/item-6.png);
   height: 59vh;
@@ -218,4 +236,82 @@ footer {
 
 .logosRedesSociales {
   width: 1.5em;
+}
+
+/* Estilo de Contacto */
+
+/* Estilos del main */
+
+.mainContacto {
+  border: none;
+}
+
+.contenedorImagenContacto {
+  background-image: url(../imagenes/collage-COLORES.jpg);
+  width: 114%;
+  height: 35vh;
+  margin-left: -6em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: brightness(0.4);
+}
+
+/* Estilo de los formularios */
+
+.contenedorFormularios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formInicioSesion {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-top: 2em;
+}
+
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-top: 2em;
+}
+
+main div form p {
+  font-size: x-large;
+  font-weight: 400;
+  color: #5c5c5c ;
+  margin-bottom: 1em;
+}
+
+main div form input {
+  margin-bottom: 2em;
+  height: 2.5em;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  font-size: large;
+  color: #909090;
+}
+
+main div form button {
+  background-color: #ffffff;
+  padding-left: 30px;
+}
+
+.formInicioSesion button{
+  width: 20%;
+  height: 15%;
+  text-align: start;
+}
+
+.formRegistro input {
+  height: 3.2em;
+}
+
+.formRegistro button {
+  width: 25%;
+  height: 20%;
+  text-align: start;
 }

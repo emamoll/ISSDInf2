@@ -14,18 +14,18 @@
       crossorigin="anonymous"
     />
     <script src="js/index.js"></script>
-    <title>Tienda de Ropa</title>
+    <title>Contacto: Tienda de Ropa</title>
   </head>
   <body>
     <header>
-      <a href="contacto.html"><p>Registro</p></a>
-      <a href="contacto.html"><p>Iniciar sesión</p></a>
+      <p>Registro</p>
+      <p>Iniciar sesión</p>
       <div>
         <span class="material-symbols-outlined"> shopping_cart </span>
         <p>Carrito</p>
       </div>
     </header>
-    <div class="imagenNav">
+    <div>
       <nav>
         <ul>
           <li>Hombre</li>
@@ -78,7 +78,7 @@
           </div>
           <li>Nosotros</li>
           <li>Novedades</li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li>Contacto</li>
           <li class="inputBuscar">
             <input type="text" placeholder="Buscar..." />
             <span class="material-symbols-outlined"> search </span>
@@ -86,37 +86,26 @@
         </ul>
       </nav>
     </div>
-    <main>
-      <nav>
-        <ul>
-          <li>POPULAR</li>
-          <li>NOVEDADES</li>
-          <li>MÁS VENDIDOS</li>
-          <li>OFERTAS</li>
-          <li>MUY PRONTO</li>
-        </ul>
-      </nav>
-      <div class="imagenesMain">
-        <div class="imagenMain1">
-          <p class="preciosEnImagenes">$30.000</p>
-        </div>
-        <div class="imagenMain2">
-          <p class="preciosEnImagenes">$17.500</p>
-        </div>
-        <div class="imagenMain3">
-          <p class="preciosEnImagenes">
-            <span>$50.700 </span><span> $42.900</span>
-          </p>
-        </div>
-        <div class="imagenMain4">
-          <p class="preciosEnImagenes">$6.900</p>
-        </div>
-        <div class="imagenMain5">
-          <p class="preciosEnImagenes">$12.000</p>
-        </div>
-        <div class="imagenMain6">
-          <p class="preciosEnImagenes">$3.700</p>
-        </div>
+    <main class="mainContacto">
+      <div class="contenedorImagenContacto">
+      </div>
+      <div class="contenedorFormularios">
+        <form class="formInicioSesion">
+          <p>Si ya tenes una cuenta registrada con nosotros!</p>
+          <input type="email" placeholder="Email" id="email">
+          <input type="password" placeholder="Clave" id="clave">
+          <button type="submit">INGRESAR</button>
+        </form>
+        <form class="formRegistro">
+          <p>Si sos un usuario nuevo!</p>
+          <input type="email" placeholder="Email" id="emailNuevo">
+          <input type="password" placeholder="Clave" id="claveNueva">
+          <input type="password" placeholder="Confirma tu clave" id="confirmarClave">
+          <button type="submit">CREAR CUENTA</button>
+        </form>
+      </div>
+      <div>
+        <p>Aca va el reloj</p>
       </div>
     </main>
     <div class="infoTienda">
