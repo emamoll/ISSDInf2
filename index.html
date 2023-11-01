@@ -13,7 +13,6 @@
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
       crossorigin="anonymous"
     />
-    <script src="js/index.js"></script>
     <title>Tienda de Ropa</title>
   </head>
   <body>
@@ -22,11 +21,14 @@
       <a href="contacto.html"><p>Iniciar sesión</p></a>
       <div>
         <span class="material-symbols-outlined"> shopping_cart </span>
-        <p>Carrito</p>
+        <a href="#"><p>Carrito</p></a>
       </div>
     </header>
     <div class="imagenNav">
       <nav>
+        <div id="contenedorFecha">
+          <span></span>
+        </div>
         <ul>
           <li>Hombre</li>
           <span class="material-symbols-outlined"> expand_more </span>
@@ -76,8 +78,8 @@
               <p>Desde el 50% de descuento</p>
             </div>
           </div>
-          <li>Nosotros</li>
-          <li>Novedades</li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="index.html"></a>Novedades</li>
           <li><a href="contacto.html">Contacto</a></li>
           <li class="inputBuscar">
             <input type="text" placeholder="Buscar..." />
@@ -87,6 +89,9 @@
       </nav>
     </div>
     <main>
+      <div class="barraProgreso">
+        <div class="barra"></div>
+      </div>
       <nav>
         <ul>
           <li>POPULAR</li>
@@ -105,7 +110,7 @@
         </div>
         <div class="imagenMain3">
           <p class="preciosEnImagenes">
-            <span>$50.700 </span><span> $42.900</span>
+            <span class="textoTachado">$50.700 </span><span> $42.900</span>
           </p>
         </div>
         <div class="imagenMain4">
@@ -182,5 +187,6 @@
           class="logosRedesSociales"
       /></a>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

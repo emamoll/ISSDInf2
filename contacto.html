@@ -13,19 +13,18 @@
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
       crossorigin="anonymous"
     />
-    <script src="js/index.js"></script>
     <title>Contacto: Tienda de Ropa</title>
   </head>
   <body>
     <header>
-      <p>Registro</p>
-      <p>Iniciar sesión</p>
+      <p><a href="contacto.html">Registro</a></p>
+      <p><a href="contacto.html">Iniciar sesión</a></p>
       <div>
         <span class="material-symbols-outlined"> shopping_cart </span>
-        <p>Carrito</p>
+        <a href="#"><p>Carrito</p></a>
       </div>
     </header>
-    <div>
+    <div class="navContacto">
       <nav>
         <ul>
           <li>Hombre</li>
@@ -76,9 +75,9 @@
               <p>Desde el 50% de descuento</p>
             </div>
           </div>
-          <li>Nosotros</li>
-          <li>Novedades</li>
-          <li>Contacto</li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="index.html">Novedades</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
           <li class="inputBuscar">
             <input type="text" placeholder="Buscar..." />
             <span class="material-symbols-outlined"> search </span>
@@ -87,25 +86,33 @@
       </nav>
     </div>
     <main class="mainContacto">
-      <div class="contenedorImagenContacto">
-      </div>
+      <div class="contenedorImagenContacto"></div>
       <div class="contenedorFormularios">
         <form class="formInicioSesion">
           <p>Si ya tenes una cuenta registrada con nosotros!</p>
-          <input type="email" placeholder="Email" id="email">
-          <input type="password" placeholder="Clave" id="clave">
+          <input type="email" placeholder="Email" id="email" />
+          <input type="password" placeholder="Clave" id="clave" />
           <button type="submit">INGRESAR</button>
+          <p id="mensajeSesionIniciada">Sesion iniciada!</p>
+          <p id="mensajeErrorIniciarSesion">Email o contraseña incorrectos!</p>
         </form>
         <form class="formRegistro">
           <p>Si sos un usuario nuevo!</p>
-          <input type="email" placeholder="Email" id="emailNuevo">
-          <input type="password" placeholder="Clave" id="claveNueva">
-          <input type="password" placeholder="Confirma tu clave" id="confirmarClave">
+          <input type="email" placeholder="Email" id="emailNuevo" />
+          <input type="password" placeholder="Clave" id="claveNueva" />
+          <input
+            type="password"
+            placeholder="Confirma tu clave"
+            id="confirmarClave"
+          />
           <button type="submit">CREAR CUENTA</button>
+          <p id="mensajeRegistroExitoso">Registro exitoso!</p>
+          <p id="mensajeErrorRegistro">Las contraseñas no coinciden!</p>
         </form>
       </div>
-      <div>
-        <p>Aca va el reloj</p>
+      <div id="contenedorReloj">
+        <div id="reloj">
+        </div>
       </div>
     </main>
     <div class="infoTienda">
@@ -171,5 +178,6 @@
           class="logosRedesSociales"
       /></a>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
