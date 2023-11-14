@@ -27,50 +27,70 @@
     <div class="navContacto">
       <nav>
         <ul>
-          <li>Hombre</li>
+          <li class="contenedorSeccionHombre">Hombre</li>
           <span class="material-symbols-outlined"> expand_more </span>
-          <div id="contenedorSeccionHombre">
-            <ul>
-              <li>Casual</li>
-              <span class="material-symbols-outlined"> expand_more </span>
-              <li>Abrigos</li>
-              <li>Deportivo</li>
-              <li>Pantalones</li>
-              <li>Remeras</li>
-            </ul>
-            <ul>
-              <li>Formal</li>
-              <span class="material-symbols-outlined"> expand_more </span>
-              <li>Chaquetas</li>
-              <li>Camisetas</li>
-              <li>Trajes</li>
-              <li>Pantalones</li>
-            </ul>
+          <div class="seccionHombre">
             <div>
+              <ul class="subMenuHombre">
+                <li class="tituloSubMenu">
+                  Casual<span class="material-symbols-outlined">
+                    expand_more
+                  </span>
+                </li>
+                <li class="subMenu">Abrigos</li>
+                <li class="subMenu">Deportivo</li>
+                <li class="subMenu">Pantalones</li>
+                <li class="subMenu">Remeras</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="subMenuHombre">
+                <li class="tituloSubMenu">
+                  Formal<span class="material-symbols-outlined">
+                    expand_more
+                  </span>
+                </li>
+                <li class="subMenu">Chaquetas</li>
+                <li class="subMenu">Camisetas</li>
+                <li class="subMenu">Trajes</li>
+                <li class="subMenu">Pantalones</li>
+              </ul>
+            </div>
+            <div class="ofertaSubMenu">
               <h2>Ofertas de Invierno</h2>
               <p>Desde el 50% de descuento</p>
             </div>
           </div>
-          <li>Mujer</li>
+          <li class="contenedorSeccionMujer">Mujer</li>
           <span class="material-symbols-outlined"> expand_more </span>
-          <div id="contenedorSeccionMujer">
-            <ul>
-              <li>Casual</li>
-              <span class="material-symbols-outlined"> expand_more </span>
-              <li>Remeras</li>
-              <li>Bikinis</li>
-              <li>Juvenil</li>
-              <li>Deportivo</li>
-            </ul>
-            <ul>
-              <li>Formal/Noche</li>
-              <span class="material-symbols-outlined"> expand_more </span>
-              <li>Vestidos</li>
-              <li>Accesorios</li>
-              <li>Trajes</li>
-              <li>Nueva Temporada</li>
-            </ul>
+          <div class="seccionMujer">
             <div>
+              <ul class="subMenuMujer">
+                <li class="tituloSubMenu">
+                  Casual<span class="material-symbols-outlined">
+                    expand_more
+                  </span>
+                </li>
+                <li class="subMenu">Remeras</li>
+                <li class="subMenu">Bikinis</li>
+                <li class="subMenu">Juvenil</li>
+                <li class="subMenu">Deportivo</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="subMenuMujer">
+                <li class="tituloSubMenu">
+                  Formal/Noche<span class="material-symbols-outlined">
+                    expand_more
+                  </span>
+                </li>
+                <li class="subMenu">Vestidos</li>
+                <li class="subMenu">Accesorios</li>
+                <li class="subMenu">Trajes</li>
+                <li class="subMenu">Nueva Temporada</li>
+              </ul>
+            </div>
+            <div class="ofertaSubMenu">
               <h2>Ofertas de Otoño</h2>
               <p>Desde el 50% de descuento</p>
             </div>
@@ -88,7 +108,7 @@
     <main class="mainContacto">
       <div class="contenedorImagenContacto"></div>
       <div class="contenedorFormularios">
-        <form class="formInicioSesion">
+        <form class="formInicioSesion" method="post" id="formularioInicioSesion">
           <p>Si ya tenes una cuenta registrada con nosotros!</p>
           <input type="email" placeholder="Email" id="email" />
           <input type="password" placeholder="Clave" id="clave" />
@@ -96,10 +116,10 @@
           <p id="mensajeSesionIniciada">Sesion iniciada!</p>
           <p id="mensajeErrorIniciarSesion">Email o contraseña incorrectos!</p>
         </form>
-        <form class="formRegistro">
+        <form class="formRegistro" method="post" id="formularioRegistro">
           <p>Si sos un usuario nuevo!</p>
           <input type="email" placeholder="Email" id="emailNuevo" />
-          <input type="password" placeholder="Clave" id="claveNueva" />
+          <input type="'password'" placeholder="Clave" id="claveNueva" />
           <input
             type="password"
             placeholder="Confirma tu clave"
@@ -107,12 +127,12 @@
           />
           <button type="submit">CREAR CUENTA</button>
           <p id="mensajeRegistroExitoso">Registro exitoso!</p>
-          <p id="mensajeErrorRegistro">Las contraseñas no coinciden!</p>
+          <p id="mensajeErrorEmailRegistro">El email es incorrecto</p>
+          <p id="mensajeErrorClaveRegistro">Las contraseñas no coinciden!</p>
         </form>
       </div>
       <div id="contenedorReloj">
-        <div id="reloj">
-        </div>
+        <div id="reloj"></div>
       </div>
     </main>
     <div class="infoTienda">

@@ -49,7 +49,6 @@ header div p {
 }
 
 div nav ul {
-  /* padding-top: 1em; */
   margin-right: 7em;
   list-style: none;
   display: flex;
@@ -89,12 +88,108 @@ div nav ul li span {
   right: -2em;
 }
 
-#contenedorSeccionHombre {
+/* Estilos de los submenues de hombre y mujer */
+
+.contenedorSeccionHombre:hover {
+  cursor: pointer;
+}
+
+.seccionHombre {
   display: none;
 }
 
-#contenedorSeccionMujer {
+.seccionHombre div {
+  width: 50%;
+  padding-top: 1em;
+}
+
+.tituloSubMenu {
+  margin-bottom: -1em;
+}
+
+.subMenuHombre {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.subMenu {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.seccionHombre div ul span {
+  margin-bottom: -1em;
+  position: relative;
+  bottom: 1em;
+  right: -2.5em;
+}
+
+.seccionHombre div ul li {
+  cursor: pointer;
+}
+
+.ofertaSubMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contenedorSeccionMujer:hover {
+  cursor: pointer;
+}
+
+.seccionMujer {
   display: none;
+}
+
+.seccionMujer div {
+  width: 50%;
+  padding-top: 1em;
+}
+
+.tituloSubMenu {
+  margin-bottom: -1em;
+}
+
+.subMenuMujer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.seccionMujer div ul span {
+  margin-bottom: -1em;
+  position: relative;
+  bottom: 1em;
+  right: -2.5em;
+}
+
+.seccionMujer div ul li {
+  cursor: pointer;
+}
+
+.activo {
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-top: 26em;
+  margin-right: 22em;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.7));
 }
 
 /* Estilos del main */
@@ -123,7 +218,6 @@ main {
   height: 6px;
   width: 0%;
   background-color: #232323;
-
 }
 
 main nav ul {
@@ -150,9 +244,77 @@ main nav ul li {
   color: #909090;
 }
 
+.filterImagenes:hover {
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+  display: block;
+}
+
+.filterImagenes:hover > .detalleEnImagenes {
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.7));
+  display: block;
+}
+
 .preciosEnImagenes {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.detalleEnImagenes {
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding-top: 1em;
+  color: #000000;
+  z-index: 1;
+  border: 1px solid #bdbdbd;
+  width: 2em;
+  height: 8em;
+  background-color: #ffffff;
+}
+
+.detalleEnImagen1 {
+  width: 40vh;
+}
+
+.detalleEnImagen2 {
+  width: 46vh;
+}
+
+.detalleEnImagen3 {
+  width: 90vh;
+}
+
+.detalleEnImagen4 {
+  width: 88vh;
+}
+
+.detalleEnImagen5 {
+  width: 44vh;
+}
+
+.detalleEnImagen6 {
+  width: 44vh;
+}
+
+.iconosDeImagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2em;
+}
+
+.iconosDeImagenes div {
+  width: 3em;
+  height: 3em;
+  background-color: #000000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.iconosDeImagenes div span {
+  margin-top: 10px;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 .imagenMain1 {
@@ -193,7 +355,7 @@ main nav ul li {
 .imagenMain4 {
   background-image: url(../imagenes/item-3.png);
   height: 76vh;
-  width: 89vh;
+  width: 88vh;
   background-size: 60%;
   background-repeat: no-repeat;
   padding-bottom: 1em;
@@ -204,13 +366,12 @@ main nav ul li {
 .imagenMain5 {
   background-image: url(../imagenes/item-5.png);
   height: 59vh;
-  width: 45vh;
+  width: 44vh;
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 1em;
   border: 1px solid #bdbdbd;
   margin-top: 20px;
-  margin-left: 10px;
 }
 
 .imagenMain6 {
@@ -269,7 +430,7 @@ footer {
 }
 
 .logosRedesSociales:hover {
-  filter: drop-shadow(1px 5px 10px rgba(0,0,0,0.7));
+  filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.7));
 }
 
 /* Estilo de Contacto */
@@ -373,7 +534,15 @@ main div form button {
   display: none;
 }
 
-#mensajeErrorRegistro {
+#mensajeErrorClaveRegistro {
+  color: #ff0000;
+  margin-top: 1em;
+  text-align: center;
+  display: none;
+  margin-bottom: -1em;
+}
+
+#mensajeErrorEmailRegistro {
   color: #ff0000;
   margin-top: 1em;
   text-align: center;
@@ -397,8 +566,176 @@ main div form button {
 }
 
 #relojDigital {
-  font-family: 'Oswald', 'Arial';
+  font-family: "Oswald", "Arial";
   letter-spacing: 0.05em;
   font-size: 4em;
   padding: 5px 5px;
+}
+
+/* Ajustes para pantallas mas chicas */
+
+@media screen and (max-width: 900px) {
+  div nav ul {
+    margin-right: 5em;
+    flex-direction: column;
+    align-items: end;
+    color: #000000;
+  }
+
+  div nav ul li a {
+    color: #000000;
+  }
+
+  .contenedorSeccionHombre {
+    margin-top: 3em;
+    margin-left: -10em;
+  }
+
+  .seccionHombre {
+    margin-right: 5em;
+    width: 20em;
+  }
+
+  .subMenuHombre {
+    padding-left: 4em;
+  }
+
+  .contenedorSeccionMujer {
+    margin-top: 1em;
+    margin-left: -10em;
+  }
+
+  .seccionMujer {
+    margin-right: 5em;
+    width: 20em;
+  }
+
+  .subMenuMujer {
+    padding-left: 4em;
+  }
+
+  .contenedorImagenContacto {
+    width: 125%;
+  }
+
+  .formInicioSesion button {
+    width: 30%;
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin-left: 1em;
+  }
+
+  .contenedorSeccionHombre {
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+
+  .seccionHombre {
+    margin-right: 5em;
+    width: 18em;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .subMenuHombre {
+    padding-left: 4em;
+  }
+
+  .contenedorSeccionMujer {
+    margin-top: 0.5em;
+    margin-left: 1em;
+  }
+
+  .seccionMujer {
+    margin-top: 1em;
+    margin-right: 5em;
+    width: 18em;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .subMenuMujer {
+    padding-left: 4em;
+  }
+
+  main nav ul {
+    flex-direction: column;
+  }
+
+  .imagenMain3 {
+    height: 59vh;
+    width: 60vh;
+  }
+
+  .imagenMain4 {
+    height: 46vh;
+    width: 48vh;
+    margin-top: 1em;
+  }
+
+  .detalleEnImagen3 {
+    width: 60vh;
+  }
+
+  .detalleEnImagen4 {
+    width: 48vh;
+  }
+
+  .infoTienda {
+    margin-top: 1em;
+  }
+
+  .informaciones {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informaciones a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 0em;
+  }
+
+  .informaciones h4 {
+    margin-top: 0.5em;
+  }
+
+  .infoTienda {
+    margin-left: 1em;
+    flex-direction: column;
+  }
+
+  .informaciones a {
+    margin-top: 0.5em;
+  }
+
+  footer {
+    margin-left: 1em;
+    flex-direction: column;
+  }
+
+  .contenedorImagenContacto {
+    width: 151%;
+  }
+
+  .contenedorFormularios {
+    flex-direction: column;
+  }
+
+  .formInicioSesion button {
+    width: 40%;
+    height: 15%;
+  }
+
+  .formRegistro button {
+    width: 40%;
+  }
+
+  .logosRedesSociales {
+    margin-top: 1em;
+  }
 }
